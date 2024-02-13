@@ -15,3 +15,4 @@ Documentation on GSR sensor hard to find as they are relatively new. Few things 
 
 ``` ``` with language name inside new line then code. Writes big block of code
 
+I will be using a led thats digital
