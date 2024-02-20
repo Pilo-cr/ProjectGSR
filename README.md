@@ -17,4 +17,3 @@ Documentation on GSR sensor hard to find as they are relatively new. Few things 
 
 I will be using a led thats digital
 
-Hello 

@@ -1,13 +1,10 @@
 /*
-  LiquidCrystal Library - Hello World
+  LiquidCrystal Library
 
  Demonstrates the use a 16x2 LCD display.  The LiquidCrystal
  library works with all LCD displays that are compatible with the
  Hitachi HD44780 driver. There are many of them out there, and you
  can usually tell them by the 16-pin interface.
-
- This sketch prints "Hello World!" to the LCD
- and shows the time.
 
   The circuit:
  * LCD RS pin to digital pin 12
@@ -23,21 +20,6 @@
  * ends to +5V and ground
  * wiper to LCD VO pin (pin 3)
 
- Library originally added 18 Apr 2008
- by David A. Mellis
- library modified 5 Jul 2009
- by Limor Fried (http://www.ladyada.net)
- example added 9 Jul 2009
- by Tom Igoe
- modified 22 Nov 2010
- by Tom Igoe
- modified 7 Nov 2016
- by Arturo Guadalupi
-
- This example code is in the public domain.
-
- https://docs.arduino.cc/learn/electronics/lcd-displays
-
 */
 
 // include the library code:
@@ -48,12 +30,18 @@
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
+
 void setup() {
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
   // Print a message to the LCD.
-  lcd.setCursor(0, 0);
+  lcd.setCursor(0, 1);
   lcd.print("Your level:");
+  lcd.setCursor(0, 0);
+  lcd.print(" Stess Detector ");
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
 }
 
 void loop() {
@@ -61,6 +49,21 @@ void loop() {
 }
 
 void printStress(int level){
-  lcd.setCursor(0, 1);
+  lcd.setCursor(11, 1);
   lcd.print(level);
+  if (level <= 10){
+    digitalWrite(3, HIGH);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+  }
+  else if (10< level <=20){
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, LOW);
+  }
+  else if (level > 20){
+    digitalWrite(3, HIGH);
+    digitalWrite(4, HIGH);
+    digitalWrite(5, HIGH);
+  }
 }
