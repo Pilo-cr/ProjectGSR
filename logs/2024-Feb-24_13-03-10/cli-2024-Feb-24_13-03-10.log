@@ -1,0 +1,96 @@
+2024-02-24 13:03:10,623 | topics | INFO | started session
+2024-02-24 13:03:10,623 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:03:10,623 | cli | INFO | Module path : /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytelemetrycli
+2024-02-24 13:03:10,623 | cli | WARNING | Module version : not found.
+2024-02-24 13:03:58,054 | cli | WARNING | Topic 'foo' unknown. Type 'ls' to list all available topics.
+
+2024-02-24 13:09:58,049 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:09:58,050 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:09:58,050 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:09:58,050 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:09:58,050 | topics | INFO | new:topic baudspeed
+2024-02-24 13:09:58,051 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:09:58,051 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:09:58,051 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:09:58,051 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:09:58,051 | cli | WARNING | Failed to connect to /dev/cu.usbmodem1101 at 9600 (bauds). E : 
+
+2024-02-24 13:10:58,345 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:10:58,347 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:10:58,347 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:10:58,347 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:10:58,347 | topics | INFO | new:topic baudspeed
+2024-02-24 13:10:58,347 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:10:58,347 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:10:58,348 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:10:58,348 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:10:58,348 | cli | WARNING | Failed to connect to /dev/cu.usbmodem1101 at 9600 (bauds). E : 
+
+2024-02-24 13:11:42,269 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:11:42,270 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:11:42,271 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:11:42,271 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:11:42,271 | topics | INFO | new:topic baudspeed
+2024-02-24 13:11:42,271 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:11:42,271 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:11:42,271 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:11:42,272 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:11:42,272 | cli | WARNING | Failed to connect to /dev/cu.usbmodem1101 at 115200 (bauds). E : 
+
+2024-02-24 13:13:14,673 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:13:14,674 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:13:14,674 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:13:14,674 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:13:14,674 | topics | INFO | new:topic baudspeed
+2024-02-24 13:13:14,674 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:13:14,674 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:13:14,674 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:13:14,674 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:13:14,675 | cli | WARNING | Failed to connect to /dev/cu.usbmodem1101xx at 9600 (bauds). E : 
+
+2024-02-24 13:13:25,683 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:13:25,683 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:13:25,683 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:13:25,684 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:13:25,684 | topics | INFO | new:topic baudspeed
+2024-02-24 13:13:25,684 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:13:25,684 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:13:25,684 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:13:25,684 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:13:25,685 | cli | WARNING | Failed to connect to /dev/cu.usbmodem110 at 9600 (bauds). E : 
+
+2024-02-24 13:14:11,149 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:14:11,150 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:14:11,150 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:14:11,150 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:14:11,150 | topics | INFO | new:topic baudspeed
+2024-02-24 13:14:11,150 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:14:11,150 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:14:11,150 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:14:11,150 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:14:11,151 | cli | WARNING | Failed to connect to /dev/cu.usbmodem1101 at 9600 (bauds). E : 
+
+2024-02-24 13:14:25,934 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:14:25,935 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:14:25,935 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:14:25,935 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:14:25,935 | topics | INFO | new:topic baudspeed
+2024-02-24 13:14:25,935 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:14:25,935 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:14:25,935 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:14:25,935 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:14:25,937 | cli | WARNING | Failed to connect to cu.usbmodem1101 at 9600 (bauds). E : 
+
+2024-02-24 13:15:29,124 | cli | WARNING | Already disconnected. Continuing happily. E : 'NoneType' object has no attribute 'close'
+2024-02-24 13:15:29,125 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:15:29,125 | cli | INFO | Cleared all topics for new session.
+2024-02-24 13:15:29,125 | cli | INFO | Cleared all stats for new session.
+2024-02-24 13:15:29,125 | topics | INFO | new:topic baudspeed
+2024-02-24 13:15:29,125 | topics | INFO | new:topic baudspeed_avg
+2024-02-24 13:15:29,126 | topics | INFO | new:topic rx_in_waiting
+2024-02-24 13:15:29,126 | topics | INFO | new:topic rx_in_waiting_max
+2024-02-24 13:15:29,126 | topics | INFO | new:topic rx_in_waiting_avg
+2024-02-24 13:15:29,126 | cli | WARNING | Failed to connect to IOUSBHostDevice at 9600 (bauds). E : 
+
+2024-02-24 13:16:43,460 | cli | WARNING | Already disconnected. Continuing happily.
+2024-02-24 13:16:43,461 | cli | INFO | Application quit.

@@ -1,0 +1,6 @@
+2024-02-24 13:17:03,622 | topics | INFO | started session
+2024-02-24 13:17:03,622 | topics | INFO | Cleared all topics and received data
+2024-02-24 13:17:03,623 | cli | INFO | Module path : /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pytelemetrycli
+2024-02-24 13:17:03,623 | cli | WARNING | Module version : not found.
+2024-02-24 13:22:26,344 | cli | WARNING | Already disconnected. Continuing happily.
+2024-02-24 13:22:26,345 | cli | INFO | Application quit.
