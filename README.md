@@ -23,9 +23,11 @@ I will be using a led thats digital
 
 ## 24-02-2024 TO DO:
 - [X] learn checks
-- [ ] transfer data from arduino to python in proper format
+- [X] transfer data from arduino to python in proper format
 - [ ] retrieve data and store in csv format adding time stamp
 - [ ] add outputs to breadboard -> led, sound, screen.
 - [ ] get a average value over a specific time spam. To get a mean to figure out when you normal, stressed, relax
 - [ ] interprate data in website
+- [ ] make each tab seperate in website.
+- [ ] find background pictures.
 

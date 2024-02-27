@@ -5,7 +5,8 @@ try:
 
     with open("data.txt", "w") as f:
         while True:
-            f.write( str(arduino.readline()).strip() + "\n" )
+            unClean = arduino.readline()
+            f.write(unClean.decode())
             f.flush()
 
 except Exception as e:
