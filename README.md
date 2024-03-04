@@ -21,6 +21,7 @@ I will be using a led thats digital
 
 
 
+
 ## 24-02-2024 TO DO:
 - [X] learn checks
 - [X] transfer data from arduino to python in proper format
