@@ -1,6 +1,13 @@
 const int sensorpin = A2;
+const int ledA = 2;
+const int ledB = 3;
+const int ledC = 4;
+
+
 int data;
 unsigned long time;
+
+
 void setup(){
   Serial.begin(9600);
 }
@@ -15,28 +22,25 @@ void loop(){
   Serial.println(message);
   Serial.flush();
 
-  delay(1000);
-
-
-  if (data > 615){
-    digitalWrite(2, HIGH);
-    digitalWrite(3, HIGH);
-    digitalWrite(4, HIGH);
+  if (615 < data < 700){
+    digitalWrite(ledA, HIGH);
+    digitalWrite(ledB, HIGH);
+    digitalWrite(ledC, HIGH);
   }
   else if (450=< data =<615){
-    digitalWrite(2, HIGH);
-    digitalWrite(3, HIGH);
-    digitalWrite(4, LOW);
+    digitalWrite(ledA, HIGH);
+    digitalWrite(ledB, HIGH);
+    digitalWrite(ledC, LOW);
   }
-  else if (data<450){
-    digitalWrite(2,HIGH);
-    digitalWrite(3, LOW);
-    digitalWrite(4, LOW);
+  else if (0=< data <450){
+    digitalWrite(ledA,HIGH);
+    digitalWrite(ledB, LOW);
+    digitalWrite(ledC, LOW);
   }
   else{
-    digitalWrite(2,LOW);
-    digitalWrite(3, LOW);
-    digitalWrite(4, LOW);
+    digitalWrite(ledA,LOW);
+    digitalWrite(ledB, LOW);
+    digitalWrite(ledC, LOW);
 
   }
   delay(1000);

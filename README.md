@@ -1,24 +1,29 @@
 Documentation on GSR sensor hard to find as they are relatively new. Few things we could find were in Chinese
 
-`cd` change directory
+`cd` change directory.
 
-`ls` directory content
+`ls` directory content.
 
-`ll` detailed directory content
+`ll` detailed directory content.
 
-`git` used to manage repository
+`git` used to manage repository.
 
-`.md` mark down 
+`.md` mark down.
 
-*** write *** makes writing dark
+*** write *** makes writing dark.
 
 
-``` ``` with language name inside new line then code. Writes big block of code
+``` ``` with language name inside new line then code. Writes big block of code.
 
-I will be using a led thats digital
+I will be using a led thats digital.
 
-`csv` stands for Comma Separates Values
+`csv` stands for Comma Separates Values.
 
+`source .venv/bin/activate` to do things inside the virtual enviroment. Open this from the python directory.
+
+`ll -a`  shows hidden directories.
+
+`||` is an or statement inside a loops restrictions.
 
 
 
@@ -33,3 +38,4 @@ I will be using a led thats digital
 - [ ] make each tab seperate in website.
 - [ ] find background pictures.
 
+rename script and pass file as argument ? - dicho por papi
