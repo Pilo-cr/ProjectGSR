@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import csv 
 
 # TODO: This should be an argument
-input = 'dataSamples/laugh_data.csv'
+input = 'dataSamples/listening_vs_working.csv'
 
 x = [] 
 y = []
@@ -17,7 +17,7 @@ with open(input ,'r') as csvfile:
 plt.plot(x, y, color = 'g', linestyle = 'solid', label = "stress data") 
 plt.xlabel('millliseconds')
 plt.ylabel('Stress') 
-plt.title('Laughing Stress', fontsize = 20)
+plt.title('Stress Levels', fontsize = 20)
 plt.grid()
 plt.legend() 
 plt.show() 
