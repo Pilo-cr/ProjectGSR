@@ -1,10 +1,13 @@
 import matplotlib.pyplot as plt 
 import csv 
 
+# TODO: This should be an argument
+input = 'dataSamples/cleanLaughData.csv'
+
 x = [] 
 y = [] 
 
-with open('dataSamples/cleanLaughData.csv','r') as csvfile: 
+with open(input ,'r') as csvfile: 
 	lines = csv.reader(csvfile, delimiter = ',') 
 	
 	for row in lines: 
