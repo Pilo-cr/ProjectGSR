@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import csv 
 
 # TODO: This should be an argument
-input = 'dataSamples/cleanLaughData.csv'
+input = 'dataSamples/laugh_data.csv'
 
 x = [] 
-y = [] 
+y = []
 
 with open(input ,'r') as csvfile: 
 	lines = csv.reader(csvfile, delimiter = ',') 
@@ -15,7 +15,7 @@ with open(input ,'r') as csvfile:
 		x.append(int(row[1])) 
 
 plt.plot(x, y, color = 'g', linestyle = 'solid', label = "stress data") 
-plt.xlabel('MilliSecs') 
+plt.xlabel('millliseconds')
 plt.ylabel('Stress') 
 plt.title('Laughing Stress', fontsize = 20)
 plt.grid()

@@ -2,7 +2,7 @@ import serial
 
 # TODO: This should be a program argument
 serial_port = "/dev/cu.usbmodem1101"
-data_file_location = "data.txt"
+data_file_location = "dataSamples/data.txt"
 
 try:
     # Connect to the serial port where Arduino is streaming data
