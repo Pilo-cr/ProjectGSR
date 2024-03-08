@@ -29,6 +29,7 @@ try:
                 plt.draw()
                 plt.pause(0.1)
 
+# This prints the exact error thats occuring so we can see where exactly the code is going wrong.
 except Exception as e:
     print("error: " , e)
 
