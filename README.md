@@ -38,5 +38,7 @@ I will be using a led thats digital.
 - [ ] change colour of line when high stress.
 - [ ] add alarm sound when high stress.
 - [ ] fill in website.
+
+need to install 'brew install ffmpeg' for sound to work, python doesnt have it.
  
 rename script and pass file as argument ? - dicho por papi

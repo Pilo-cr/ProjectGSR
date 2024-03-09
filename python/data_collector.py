@@ -3,6 +3,8 @@
 import serial
 import matplotlib.pyplot as plt
 from statistics import mean 
+from pydub import AudioSegment
+from pydub.playback import play
 
 
 # TODO: This should be a program argument
@@ -19,6 +21,7 @@ try:
     y_mean = []
     y_last_30sec = []
     y = []
+    song = AudioSegment.from_file("warning.mp3", format="mp3")
     
     plt.ion()
     plt.title('Realtime Stress', fontsize = 20)
@@ -39,7 +42,8 @@ try:
 
                 # TODO: Make only part of line change colour instead of entire line?
                 if int(data_splitted[0]) >= 500:
-                     colour_change = 'r'
+                     colour_change = 'r' # TODO:would like to make sound play when stres increases X amount intead of at a certain point.
+                     play(song)
                 else:colour_change = 'g'
 
                 message = "Running time: " + data_splitted[1] + " Your average stress level has been: " + str(mean(y))
