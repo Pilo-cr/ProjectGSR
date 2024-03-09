@@ -27,15 +27,16 @@ I will be using a led thats digital.
 
 
 
-## 24-02-2024 TO DO:
+## TO DO:
 - [X] learn checks
 - [X] transfer data from arduino to python in proper format
 - [X] retrieve data and store in csv format adding time stamp
-- [ ] form analytics using data files
-- [ ] add outputs to breadboard -> led, sound, screen.
-- [ ] get a average value over a specific time spam. To get a mean to figure out when you normal, stressed, relax
-- [ ] interprate data in website
-- [ ] make each tab seperate in website.
-- [ ] find background pictures.
-
+- [X] form analytics using data files
+- [X] get a average value over a specific time spam. To get a mean to figure out when you normal, stressed, relax
+- [ ] interprate data in website- [ ] find background pictures.
+- [ ] change message at end from milli secs to regular time.
+- [ ] change colour of line when high stress.
+- [ ] add alarm sound when high stress.
+- [ ] fill in website.
+ 
 rename script and pass file as argument ? - dicho por papi
