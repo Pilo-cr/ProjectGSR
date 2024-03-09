@@ -1,3 +1,5 @@
+# Makes moving graph using current data being collected from arduino. 
+
 import serial
 import matplotlib.pyplot as plt
 from statistics import mean 

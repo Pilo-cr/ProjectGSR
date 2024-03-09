@@ -1,3 +1,5 @@
+# Used to make still graph of old data files, you can upload any.
+
 import matplotlib.pyplot as plt 
 import csv 
 
