@@ -36,11 +36,18 @@ try:
                 x.append(int(data_splitted[1]))
                 y_mean.append(mean(y))
                 y_last_30sec.append(mean(y[-10:]))
+
+                # TODO: Make only part of line change colour instead of entire line?
+                if int(data_splitted[0]) >= 500:
+                     colour_change = 'r'
+                else:colour_change = 'g'
+
                 message = "Running time: " + data_splitted[1] + " Your average stress level has been: " + str(mean(y))
                 print(message, end='\r')
-                plt.plot(x, y, color = 'g', linestyle = 'solid', label = "stress data")
-                plt.plot(x, y_mean, color = 'b', linestyle = 'solid', label = "stress data")
-                plt.plot(x, y_last_30sec, color = 'r', linestyle = 'solid', label = "stress data")
+                plt.plot(x, y, color = colour_change, linestyle = 'solid', label = "stress data")
+                # This following line would desplay the active mean of your stress on the graph aswell, I chose to keep it off.
+                # plt.plot(x, y_mean, color = 'b', linestyle = 'solid', label = "stress data")
+                plt.plot(x, y_last_30sec, color = 'black', linestyle = 'solid', label = "stress data")
                 plt.draw()
                 plt.pause(0.1)
 
