@@ -22,7 +22,7 @@
         </div>
         <div>
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Stress Detector - Project Report</h1>
-            <p class="lead">This is a Leaving Cert project focused on using technology to help improve the well being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
+            <p class="lead">This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
         </div>
     </div>
 </div>
@@ -101,7 +101,7 @@
                 I carried out interviews with my friends and family to see if they would be interested in a product like this.
                 The outcome was very positive, they all said they would be very interested in being able to view their emotional changes towards different tasks such as movies, so I made sure to include a way to actively view the changes.
                 I also asked if they would be bothered by wearing the sensor on their fingers over long periods of times, but they seemed okay with it.
-                One piece of feedback that i got was that they would think it would be more useful if people could still move around while wearing it and for the artifact to not take up too much space.
+                One piece of feedback that I got was that they would think it would be more useful if people could still move around while wearing it and for the artifact to not take up too much space.
                 Another thing I asked that I considered when creating the code was in which way they would like to view the values.
                 They wanted it to be easy to see the changes.
             </p>
@@ -202,14 +202,14 @@
                             This is very important as the graph is the main output of my project.
                             If it were to not work, it would be very damaging to the overall outcome for the project.
 
-                            The way i achieved using this code as a unit test is because with this I am able to upload a csv dile that I already know the contents of.
+                            The way I achieved using this code as a unit test is because with this I am able to upload a csv dile that I already know the contents of.
                             This means that when I run the code I already have a graph made to compare this outcome to.
                             The graph was easy to make outside the code as the csv file can be uploaded to pre-existing webs and is also not too hard to create by hand.
                             <ol>
                                 <li>In the line 3 and 4 we import necessary libraries</li>
-                                <li>Line 7 is very important, it will take in the csv file that we already know how the graph looks and we use it to test the code, this unit test will be checking if the graphs are created accurately and how they should look before we start adding the sounds, colour changes, and on-going movement of the graph.</li>
+                                <li>Line 7 is very important, it will take in the csv file that we already know how the graph looks, and we use it to test the code, this unit test will be checking if the graphs are created accurately and how they should look before we start adding the sounds, colour changes, and ongoing movement of the graph.</li>
                                 <li>Lines 16 and 17 we divide the data we collect from the csv file. This allows us to choose what data we show in the x-axis and y-axis. </li>
-                                <li>Line 19 is the code making the plot line, we are saying its green and solid. We dont have the colour changing aspect in this unit test yet.</li>
+                                <li>Line 19 is the code making the plot line, we are saying its green and solid. We don't have the colour changing aspect in this unit test yet.</li>
                                 <li>Lines 20 to 22 is all about labeling the graph.</li>
                             </ol>
                         </p>
@@ -222,10 +222,10 @@
                 <br>
                 <h4>Problem and Solution</h4>
                 There was many small problems that I encountered through the process of creating the coding for the project.
-                Along with other problems too such as getting the GSR sensor as the shipping time was months. <br><br>
+                Along with other problems too, such as getting the GSR sensor as the shipping time was months. <br><br>
 
                 A problem that I encountered while creating my project which I will talk about here was when I reached the point where I had to create a code to transfer data from the Arduino to python. <br>
-                All of the information online was outdated or just did not work in general. <br>
+                All the information online was outdated or just did not work in general. <br>
                 It was very difficult to find anything that would be helpful, but I noticed a lot of people were using serial library to import information. <br>
                 After reading a lot of websites and watching a few tutorials I came to the conclusion that none of them were going to help me, as none were working, and decided to take a different approach.<br>
                 Using the official documentation, I learnt how to use the import serial and eventually using trial and error I figured out how to get it working. <br>
@@ -294,13 +294,13 @@
                 Then, through python I created a program that takes in the information from the Arduino and stores it in a CSV file.
                 I made the information be displayed in a graph form (graphical format) which would change colours according to the stress level.
                 As well as that, it displays the average stress level throughout the time running and plays a warning noise when you reach high stress level.
-                The average stress level can help the user by informing them on whether the activity they have done made them stressed or calm and they can know if they should avoid doing this activity in the future or not.
+                The average stress level can help the user by informing them on whether the activity they have done made them stressed or calm, and they can know if they should avoid doing this activity in the future or not.
             </p>
 
             <p>
                 My initial design of the project did not contain all the requirements needed from the project brief. I did not have enough outputs planned, I only had the idea of adding LED lights to the arduino. <br>
                 I decided to have all my outputs coded straight onto the python code as it would be less of a hassle to carry around the arduino if it only had one sensor attached to it. <br>
-                Thankfully the original design idea didn't need many modifications to get it to meet the requirement and it actually turned out to be a simpler plan then my original one. <br>
+                Thankfully the original design idea didn't need many modifications to get it to meet the requirement, and it actually turned out to be a simpler plan then my original one. <br>
             </p>
 
             <p>
@@ -312,7 +312,7 @@
                 In the future there are a few things that could be improved on. <br>
                 Some examples are:
                 <ul>
-                    <li>Currently when you have reached a certain stress level the whole graph line changes colour to red. In the future I would like it if the line only changed colour on the section that is higher than the certain level.</li>
+                    <li>Currently, when you have reached a certain stress level the whole graph line changes colour to red. In the future I would like it if the line only changed colour on the section that is higher than the certain level.</li>
                     <li>In the code I have created, the levels that correspond to high stress or low stress are based on my levels that I worked out with multiple trial tests. In the future I would like it if there was a pice of code that, when the user first gets the artifact, it would calculate what level would be high for that specific user. </li>
                     <li>I also would like to have a sound play when you are no longer in the high stress area.</li>
                 </ul>
