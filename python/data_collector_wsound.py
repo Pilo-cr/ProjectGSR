@@ -43,13 +43,13 @@ try:
                 y_last_30sec.append(mean(y[-10:]))
 
                 # TODO: Make only part of line change colour instead of entire line?
-                if yValue >= 500:
+                if yValue >= 650:
                      colour_change = 'r' # TODO:would like to make sound play when stres increases X amount intead of at a certain point.
-
-
-                elif yValue >= 615:
-                     colour_change = 'r'
                      play(song)
+
+
+                elif yValue >= 550:
+                     colour_change = 'r'
 
 
                 else:
