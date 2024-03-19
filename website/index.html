@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CompScience Project</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
+
+    <!-- Using only bootstrap icons and grid, so other css is home crafted -->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -27,54 +34,78 @@
     </div>
 </div>
 
-
-<!-- Hero -->
+<!-- End Hero -->
 
 <div class="container px-4 pb-5">
+<div class="row justify-content-center">
+    <div class="col">
+        <a class="nav-link active" href="#brief-tab-pane" >Brief</a>
+    </div>
+    <div class="col">
+        <a class="nav-link active" href="#investigation-tab-pane" >Investigation</a>
+    </div>
+    <div class="col">
+        <a class="nav-link active" href="#planANDdesign-tab-pane" >Plan & Design</a>
+    </div>
+    <div class="col">
+        <a class="nav-link active" href="#create-tab-pane" >Create</a>
+    </div>
+    <div class="col">
+        <a class="nav-link active" href="#evaluation-tab-pane" >Evaluation</a>
+    </div>
+    <div class="col">
+        <a class="nav-link active" href="#references-tab-pane" >References</a>
+    </div>
+    <div class="col">
+
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+</div>
+<div class="container px-4 pb-5 toc_container">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="brief-tab" data-bs-toggle="tab" data-bs-target="#brief-tab-pane"
-                    type="button"
+            <a class="nav-link active" id="brief-tab" data-bs-toggle="tab" data-bs-target="#brief-tab-pane" href="#brief-tab-pane"
                     role="tab" aria-controls="brief-tab-pane" aria-selected="true">Brief
-            </button>
+            </a>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="investigation-tab" data-bs-toggle="tab" data-bs-target="#investigation-tab-pane"
-                    type="button"
+            <a class="nav-link" id="investigation-tab" data-bs-toggle="tab" data-bs-target="#investigation-tab-pane" href="#investigation-tab-pane"
                     role="tab" aria-controls="investigation-tab-pane" aria-selected="false">Investigation
-            </button>
+            </a>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="planANDdesign-tab" data-bs-toggle="tab" data-bs-target="#planANDdesign-tab-pane"
-                    type="button"
+            <a class="nav-link" id="planANDdesign-tab" data-bs-toggle="tab" data-bs-target="#planANDdesign-tab-pane" href="#planANDdesign-tab-pane"
                     role="tab" aria-controls="planANDdesign-tab-pane" aria-selected="false">Plan & Design
-            </button>
+            </a>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="create-tab" data-bs-toggle="tab" data-bs-target="#create-tab-pane" type="button"
+            <a class="nav-link" id="create-tab" data-bs-toggle="tab" data-bs-target="#create-tab-pane" href="#create-tab-pane" type="button"
                     role="tab" aria-controls="create-tab-pane" aria-selected="false">Create
-            </button>
+            </a>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="evaluation-tab" data-bs-toggle="tab" data-bs-target="#evaluation-tab-pane"
-                    type="button"
+            <a class="nav-link" id="evaluation-tab" data-bs-toggle="tab" data-bs-target="#evaluation-tab-pane" href="#evaluation-tab-pane"
                     role="tab" aria-controls="evaluation-tab-pane" aria-selected="true">Evaluation
-            </button>
+            </a>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references-tab-pane"
-                    type="button"
+            <a class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references-tab-pane" href="#references-tab-pane"
                     role="tab" aria-controls="references-tab-pane" aria-selected="true">References
-            </button>
+            </a>
         </li>
     </ul>
+</div>
 
-
-
+<div class="container px-4 pb-5">
 
     <div class="tab-content mt-4" id="myTabContent">
 
-        <div class="tab-pane fade show active" id="brief-tab-pane" role="tabpanel" aria-labelledby="brief-tab" tabindex="0">
+        <div class="tab-pane fade show active mt-5" id="brief-tab-pane" role="tabpanel" aria-labelledby="brief-tab" tabindex="0">
+            <hr />
+            <h2>Brief</h2>
             <div class="row">
                 <div class="col-6"><img src="img/graph.png" class="img-fluid"></div>
                 <div class="col-6"><img src="img/GSRsensor.jpeg" class="img-fluid"></div>
@@ -86,7 +117,9 @@
 
 
 
-        <div class="tab-pane fade" id="investigation-tab-pane" role="tabpanel" aria-labelledby="investigation-tab" tabindex="0">
+        <div class="tab-pane fade mt-5" id="investigation-tab-pane" role="tabpanel" aria-labelledby="investigation-tab" tabindex="0">
+            <hr />
+            <h2>Investigation</h2>
             <p>
                 I started the investigation process by brainstorming different projects I could do that would help enhance a person's well-being.
                 I considered an alarm that would go off when you moved your phone to reduce screen time, cultivating plants from home to help people relax, and finally the idea I decided to go with, which was an analysis of sweat on skin that could let you know when you're getting stressed.
@@ -113,8 +146,9 @@
 
 
 
-        <div class="tab-pane fade" id="planANDdesign-tab-pane" role="tabpanel" aria-labelledby="planANDdesign-tab" tabindex="0">
-
+        <div class="tab-pane fade mt-5" id="planANDdesign-tab-pane" role="tabpanel" aria-labelledby="planANDdesign-tab" tabindex="0">
+            <hr />
+            <h2>Plan and Design</h2>
             <p>
                 <h4>User's Needs</h4>
                 I made sure to include the feedback from the interviews when designing my project.
@@ -156,8 +190,9 @@
 
 
 
-        <div class="tab-pane fade" id="create-tab-pane" role="tabpanel" aria-labelledby="create-tab" tabindex="0">
-
+        <div class="tab-pane fade mt-5" id="create-tab-pane" role="tabpanel" aria-labelledby="create-tab" tabindex="0">
+            <hr />
+            <h2>Create</h2>
 
             <table class="table">
                 <thead>
@@ -221,9 +256,9 @@
                 </div>
             </p>
 
+            <br>
+            <h4>Problem and Solution</h4>
             <p>
-                <br>
-                <h4>Problem and Solution</h4>
                 There was many small problems that I encountered through the process of creating the coding for the project.
                 Along with other problems too, such as getting the GSR sensor as the shipping time was months. <br><br>
 
@@ -234,30 +269,27 @@
                 Using the official documentation, I learnt how to use the import serial and eventually using trial and error I figured out how to get it working. <br>
             </p>
 
-            <p>
-                <br>
-                <h4>An important piece of code</h4>
-                <div class="row">
-                    <div class="col-6">
-                        <p>
-                            This piece of code is important to the project as it is in charge of taking the data being collected from the arduino, storing the data into a csv file and then into the computer.<br>
-                            This then allows python to read that data and act on it making the graph and all other outputs. <br>
+            <h4 class="mt-5 mb-0">An important piece of code</h4>
+            <div class="row">
+                <div class="col-6">
+                    <p>
+                        This piece of code is important to the project as it is in charge of taking the data being collected from the arduino, storing the data into a csv file and then into the computer.<br>
+                        This then allows python to read that data and act on it making the graph and all other outputs. <br>
 
-                            <ol>
-                                <li>Line 11 sets what serial port the computer is taking the information through. This would change for each computer.</li>
-                                <li>Line 12 tell the program where to store the data.</li>
-                                <li>Line 14 is a variable that is later used in the code for printing out a message.</li>
-                                <li>Line 16, try lets you be able to handle errors that may occur.</li>
-                                <li>Line 18 is what actually tells the program to read the serial port and take in the data from the arduino.</li>
-                            </ol>
-                        </p>
-                    </div>
-                    <div class="col-6"><img src="img/importing_code.jpg" class="img-fluid"></div>
+                        <ol>
+                            <li>Line 11 sets what serial port the computer is taking the information through. This would change for each computer.</li>
+                            <li>Line 12 tell the program where to store the data.</li>
+                            <li>Line 14 is a variable that is later used in the code for printing out a message.</li>
+                            <li>Line 16, try lets you be able to handle errors that may occur.</li>
+                            <li>Line 18 is what actually tells the program to read the serial port and take in the data from the arduino.</li>
+                        </ol>
+                    </p>
                 </div>
-            </p>
+                <div class="col-6"><img src="img/importing_code.jpg" class="img-fluid"></div>
+            </div>
 
-            <p>
-                <h4>Creating the Graph</h4>
+
+                <h4 class="mt-5 mb-0">Creating the Graph</h4>
             <div class="row">
                 <div class="col-3">
                     <br><br>
@@ -286,14 +318,13 @@
                 <div class="col-9"><img src="img/LaughingStress.png" class="img-fluid"></div>
             </div>
 
-            </p>
 
         </div>
 
 
 
-        <div class="tab-pane fade" id="evaluation-tab-pane" role="tabpanel" aria-labelledby="evaluation-tab" tabindex="0">
-
+        <div class="tab-pane fade mt-5" id="evaluation-tab-pane" role="tabpanel" aria-labelledby="evaluation-tab" tabindex="0">
+            <h2>Evaluation</h2>
             <p>
                 When I began my evaluation, the first thing I checked was if my project was meeting the brief. <br>
                 The brief was as follows:
@@ -357,8 +388,8 @@
 
 
 
-        <div class="tab-pane fade" id="references-tab-pane" role="tabpanel" aria-labelledby="references-tab" tabindex="0">
-
+        <div class="tab-pane fade mt-5" id="references-tab-pane" role="tabpanel" aria-labelledby="references-tab" tabindex="0">
+            <h2>References</h2>
             <p>
                 <ul>
                     <li><a href="https://docs.arduino.cc/hardware/uno-rev3/#tech-specs">Uno R3</a>: Learning about my arduino model.</li>
@@ -437,7 +468,7 @@
 </div>
 
 <!-- Footer -->
-<div class="container">
+<div id="footer" class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Candidate Number: 135792 </span>
@@ -450,10 +481,6 @@
     </footer>
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

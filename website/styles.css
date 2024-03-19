@@ -1,0 +1,103 @@
+
+/*body {*/
+/*    margin:50px;*/
+/*    padding:10px;*/
+/*}*/
+
+/** Google Fonts **/
+html {
+    font-family:"Gowun Dodum", "helvetica neue", helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Rock Salt", cursive;
+}
+
+
+/* Responsive images. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/** Menu **/
+
+/* Tables style */
+table {
+    table-layout: fixed;
+    width: 90%;
+    border-collapse: collapse;
+    border: 3px solid gray;
+}
+
+/*thead th:nth-child(1) {*/
+/*    width: 1%;*/
+/*}*/
+
+/*thead th:nth-child(2) {*/
+/*    width: 20%;*/
+/*}*/
+
+/*thead th:nth-child(3) {*/
+/*    width: 15%;*/
+/*}*/
+
+thead th,
+tfoot th {
+    font-family: "Rock Salt", cursive;
+}
+
+/* Footer */
+#footer ul {
+    list-style-type: none;
+}
+
+
+
+/*th,*/
+/*td {*/
+/*    text-align: left;*/
+/*    padding: 0.35rem;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TOC */
+/*.toc_container {*/
+/*    background: #f9f9f9 none repeat scroll 0 0;*/
+/*    border: 1px solid #aaa;*/
+/*    display: table;*/
+/*    font-size: 95%;*/
+/*    margin-bottom: 1em;*/
+/*    padding: 20px;*/
+/*    width: auto;*/
+/*}*/
+
+/*.toc_title {*/
+/*    font-weight: 700;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.toc_container li, .toc_container ul, .toc_container ul li{*/
+/*    list-style: outside none none !important;*/
+/*}*/
