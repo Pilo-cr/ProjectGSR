@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CompScience Project</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+
+        /* Tables style */
+
+        #table-week-log {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        #table-week-log table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid gray;
+
+        }
+
+        #table-week-log thead th:nth-child(1) {
+            width: 35%;
+            border-bottom: 3px solid gray;
+        }
+
+        #table-week-log thead th:nth-child(2) {
+            width: 65%;
+            text-align: left;
+            border-bottom: 3px solid gray;
+        }
+
+        #table-week-log tbody td:nth-child(1) {
+            text-align: center;
+        }
+
+        #table-week-log tbody tdß:nth-child(2) {
+
+        }
+
+        /*thead th:nth-child(3) {*/
+        /*    width: 15%;*/
+        /*}*/
+
+        #table-week-log thead th,
+        #table-week-log tfoot th {
+            font-family: "Rock Salt", cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Menu -->
+<div class="topnav">
+    <a href="index.html" >Brief</a>
+    <a href="investigation.html" >Investigation</a>
+    <a href="plan-and-design.html" >Plan & Design</a>
+    <a class="active" href="create.html" >Create</a>
+    <a href="evaluation.html" >Evaluation</a>
+    <a href="references.html" >References</a>
+</div>
+<!-- End Menu -->
+
+<div id="main-container">
+
+    <!-- Hero -->
+    <div id="hero">
+        <div>
+            <img src="img/photo_2024-03-13_16-39-16.jpg"  alt="hand with sensor">
+        </div>
+        <div>
+            <h1>Stress Detector - Project Report</h1>
+            <p>This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
+        </div>
+    </div>
+    <!-- End Hero -->
+
+    <h2>Create</h2>
+
+    <div id="table-week-log">
+        <table>
+            <thead>
+            <tr>
+                <th>Week</th>
+                <th>Progress Log</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Week 1</td>
+                <td>Brain storming ideas and choosing which one I will focus on.</td>
+            </tr>
+            <tr>
+                <td>Week 2</td>
+                <td>Learning the language C++</td>
+            </tr>
+            <tr>
+                <td>Week 3</td>
+                <td>Implementing what I learned in C++ to code my arduino. <br> Trying to find information about my GSR sensor.
+                </td>
+            </tr>
+            <tr>
+                <td>Week 4</td>
+                <td>Learning how to transfer data from arduino to python.<br> Coding python to print out needed outputs using
+                    collected data from arduino.
+                </td>
+            </tr>
+            <tr>
+                <td>Week 5 + 6</td>
+                <td>Creating Website, HTML code, recording video, filling in the report.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <h4>Unit Test</h4>
+    <div class="row">
+        <div class="column">
+            <p>
+                I am using this unit test to check if the graphing is working properly.
+                We are using pre-collected data as the changing data set is tested in a different unit test.
+                This is very important as the graph is the main output of my project.
+                If it were to not work, it would be very damaging to the overall outcome for the project.
+
+                The way I achieved using this code as a unit test is because with this I am able to upload a csv dile that I already
+                know the contents of.
+                This means that when I run the code I already have a graph made to compare this outcome to.
+                The graph was easy to make outside the code as the csv file can be uploaded to pre-existing webs and is also not too
+                hard to create by hand.
+
+            </p>
+
+            <ol>
+                <li>In the line 3 and 4 we import necessary libraries</li>
+                <li>Line 7 is very important, it will take in the csv file that we already know how the graph looks, and we use it
+                    to test the code, this unit test will be checking if the graphs are created accurately and how they should look
+                    before we start adding the sounds, colour changes, and ongoing movement of the graph.
+                </li>
+                <li>Lines 16 and 17 we divide the data we collect from the csv file. This allows us to choose what data we show in
+                    the x-axis and y-axis.
+                </li>
+                <li>Line 19 is the code making the plot line, we are saying its green and solid. We don't have the colour changing
+                    aspect in this unit test yet.
+                </li>
+                <li>Lines 20 to 22 is all about labeling the graph.</li>
+            </ol>
+        </div>
+        <div class="column center">
+            <img src="img/unit_test.jpg" alt="unit test">
+        </div>
+    </div>
+
+
+
+
+
+
+    <h4>Problem and Solution</h4>
+    <p>
+        There was many small problems that I encountered through the process of creating the coding for the project.
+        Along with other problems too, such as getting the GSR sensor as the shipping time was months. <br><br>
+
+        A problem that I encountered while creating my project which I will talk about here was when I reached the point
+        where I had to create a code to transfer data from the Arduino to python. <br>
+        All the information online was outdated or just did not work in general. <br>
+        It was very difficult to find anything that would be helpful, but I noticed a lot of people were using serial
+        library to import information. <br>
+        After reading a lot of websites and watching a few tutorials I came to the conclusion that none of them were going
+        to help me, as none were working, and decided to take a different approach.<br>
+        Using the official documentation, I learnt how to use the import serial and eventually using trial and error I
+        figured out how to get it working. <br>
+    </p>
+
+    <h4>An important piece of code</h4>
+
+
+    <p>
+        This piece of code is important to the project as it is in charge of taking the data being collected from the
+        arduino, storing the data into a csv file and then into the computer.<br>
+        This then allows python to read that data and act on it making the graph and all other outputs. <br>
+
+    </p>
+    <ol>
+        <li>Line 11 sets what serial port the computer is taking the information through. This would change for each
+            computer.
+        </li>
+        <li>Line 12 tell the program where to store the data.</li>
+        <li>Line 14 is a variable that is later used in the code for printing out a message.</li>
+        <li>Line 16, try lets you be able to handle errors that may occur.</li>
+        <li>Line 18 is what actually tells the program to read the serial port and take in the data from the arduino.</li>
+    </ol>
+
+    <img src="img/importing_code.jpg" class="img-fluid">
+
+
+    <h4>Creating the Graph</h4>
+    <p>
+        I had to play around with the coding for the graphs as it was my first time using them.
+    </p>
+    <p>
+        After learning how to code for the graph to print out the values inside the csv file this was the first outcome.<br>
+        It was extremely hard to read so my next step was to change its design.<br>
+        To make more graphs, I carried out some more tests to collect more data.
+    </p>
+
+    <img src="img/dashedStressPractice.png" class="img-fluid">
+
+    <p>
+        I was wearing the sensors to try to get some new data sets when my dad made me laugh.<br>
+        This was the first data were you could clearly see a big change in stress levels.<br>
+        It showed that laughing made me relax a lot, which makes sense if you think about the saying "laughter is the best
+        medicine".<br>
+        I also changed the look of the graph which made it so much easier to read, this helped me decide that I was going to
+        use solid lines in the graph.<br>
+        Later on I added the colour change, sound warning, and actively moving line to the output graph.
+    </p>
+
+    <img src="img/LaughingStress.png" class="img-fluid">
+</div>
+
+
+
+<!-- Footer -->
+<div id="footer" class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Candidate Number: 135792 </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Pilo-cr/ProjectGSR"
+                                target="_blank"><i class="bi bi-github"></i></a></li>
+            <!--  Code for after exams are back: <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>  -->
+        </ul>
+    </footer>
+</div>
+
+</body>
+
+</html>

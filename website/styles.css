@@ -1,8 +1,8 @@
 
-/*body {*/
-/*    margin:50px;*/
-/*    padding:10px;*/
-/*}*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
 
 /** Google Fonts **/
 html {
@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5 {
     font-family: "Rock Salt", cursive;
 }
 
+h2 {
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+}
 
 /* Responsive images. */
 img {
@@ -27,32 +31,73 @@ video {
     height: auto;
 }
 
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
+
+#main-container {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 4rem;
+}
+
+#hero {
+    text-align: center;
+}
+
+
 /** Menu **/
 
-/* Tables style */
-table {
-    table-layout: fixed;
-    width: 90%;
-    border-collapse: collapse;
-    border: 3px solid gray;
+.topnav {
+    background-color: #c0c0c0;
+    position:fixed;
+    padding-left: 50px;
+    top:0;
+    width:100%;
+    z-index:100;
 }
 
-/*thead th:nth-child(1) {*/
-/*    width: 1%;*/
-/*}*/
-
-/*thead th:nth-child(2) {*/
-/*    width: 20%;*/
-/*}*/
-
-/*thead th:nth-child(3) {*/
-/*    width: 15%;*/
-/*}*/
-
-thead th,
-tfoot th {
-    font-family: "Rock Salt", cursive;
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
 }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+
+
 
 /* Footer */
 #footer ul {

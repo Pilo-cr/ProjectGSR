@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CompScience Project</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Hero -->
+
+<div>
+    <div>
+        <img src="img/photo_2024-03-13_16-39-16.jpg" alt="hand with sensor">
+    </div>
+    <div>
+        <h1>Stress Detector - Project Report</h1>
+        <p>This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have
+            made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
+    </div>
+</div>
+
+<!-- End Hero -->
+
+<!-- Menu -->
+<div class="container px-4 pb-5">
+    <div class="row justify-content-center">
+        <div class="col">
+            <a class="nav-link active" href="index.html">Brief</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="investigation.html">Investigation</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="plan-and-design.html">Plan & Design</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="create.html">Create</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="evaluation.html">Evaluation</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="references.html">References</a>
+        </div>
+    </div>
+</div>
+<!-- End Menu -->
+
+<h2>Plan and Design</h2>
+
+<h4>User's Needs</h4>
+<p>
+
+    I made sure to include the feedback from the interviews when designing my project.
+    For example my end design only has one sensor attached to the arduino, when originally I was meant to have all my
+    outputs on attached to it.
+    This shows me taking the users needs into account as they said they would like for the artifact to not be too bulky.
+    As well as that, because the interviews let me know people wanted the data to be easily readable, I decided to go
+    with a graph to interpret the data.
+</p>
+
+<h4>What if...</h4>
+<p>
+
+    When creating my project I took into account some 'what if' situations.
+    What if the user is deaf? I made a visual way of knowing when you have reached a high stress level.
+    What if the user is blind? There is a warning noise that plays when you have reached a high stress level.
+    What if the user do not know how to read the graph? The stress level is written on the screen as it's being read, so
+    they don't need to know how to read graphs.
+
+</p>
+
+<h4>Hardware and Software</h4>
+
+<ul>
+    <li>Computer to run code on.</li>
+    <li>Arduino which will have C++ code it will run on, it will take in the information and feed it to python code
+        which will act on it.
+    </li>
+    <li>Galvanic Skin Response Sensor.</li>
+    <li>Speaker or Headphones, something to be able to hear the warning sound.</li>
+    <li>Cables used to connect the sensor to the arduino.</li>
+    <li>Visual Studio Code used to code python.</li>
+    <li>ArduinoID used to code the C++ code.</li>
+</ul>
+
+<h3>Flowchart</h3><br>
+<div class="row">
+    <div class="col-12"><img src="img/latest_flowchart.png" class="img-fluid"></div>
+</div>
+
+<!-- Footer -->
+<div id="footer" class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Candidate Number: 135792 </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Pilo-cr/ProjectGSR"
+                                target="_blank"><i class="bi bi-github"></i></a></li>
+            <!--  Code for after exams are back: <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>  -->
+        </ul>
+    </footer>
+</div>
+
+</body>
+
+</html>

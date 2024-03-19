@@ -11,461 +11,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
 
-    <!-- Using only bootstrap icons and grid, so other css is home crafted -->
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-<!-- Hero -->
 
-<div class="container px-4 pt-5">
-    <div class="flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="text-center mb-5">
-            <img src="img/photo_2024-03-13_16-39-16.jpg" class="d-block mx-lg-auto img-fluid rounded"
-                 alt="hand with sensor" loading="lazy">
+<!-- Menu -->
+<div class="topnav">
+    <a class="active" href="index.html" >Brief</a>
+    <a href="investigation.html" >Investigation</a>
+    <a href="plan-and-design.html" >Plan & Design</a>
+    <a href="create.html" >Create</a>
+    <a href="evaluation.html" >Evaluation</a>
+    <a href="references.html" >References</a>
+</div>
+<!-- End Menu -->
+
+
+
+<div id="main-container">
+
+    <!-- Hero -->
+    <div id="hero">
+        <div>
+            <img src="img/photo_2024-03-13_16-39-16.jpg"  alt="hand with sensor">
         </div>
         <div>
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Stress Detector - Project Report</h1>
-            <p class="lead">This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
+            <h1>Stress Detector - Project Report</h1>
+            <p>This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
         </div>
     </div>
+    <!-- End Hero -->
+
+
+
+    <h2>Brief</h2>
+    <div class="row">
+        <div class="column center"><img src="img/graph.png" alt="sample graph"></div>
+        <div class="column center"><img src="img/GSRsensor.jpeg" alt="gsr sensor"></div>
+    </div>
+    <br><br>
+    <h3>Brief Report Video</h3><br>
+    <video class="img-fluid" controls="controls" name="Brief Video" ><source src="img/2444CCCF-BB4D-40D0-869A-5B82789344D1.mov"></video>
 </div>
 
-<!-- End Hero -->
 
-<div class="container px-4 pb-5">
-<div class="row justify-content-center">
-    <div class="col">
-        <a class="nav-link active" href="#brief-tab-pane" >Brief</a>
-    </div>
-    <div class="col">
-        <a class="nav-link active" href="#investigation-tab-pane" >Investigation</a>
-    </div>
-    <div class="col">
-        <a class="nav-link active" href="#planANDdesign-tab-pane" >Plan & Design</a>
-    </div>
-    <div class="col">
-        <a class="nav-link active" href="#create-tab-pane" >Create</a>
-    </div>
-    <div class="col">
-        <a class="nav-link active" href="#evaluation-tab-pane" >Evaluation</a>
-    </div>
-    <div class="col">
-        <a class="nav-link active" href="#references-tab-pane" >References</a>
-    </div>
-    <div class="col">
-
-    </div>
-    <div class="col">
-
-    </div>
-</div>
-</div>
-<div class="container px-4 pb-5 toc_container">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="brief-tab" data-bs-toggle="tab" data-bs-target="#brief-tab-pane" href="#brief-tab-pane"
-                    role="tab" aria-controls="brief-tab-pane" aria-selected="true">Brief
-            </a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="investigation-tab" data-bs-toggle="tab" data-bs-target="#investigation-tab-pane" href="#investigation-tab-pane"
-                    role="tab" aria-controls="investigation-tab-pane" aria-selected="false">Investigation
-            </a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="planANDdesign-tab" data-bs-toggle="tab" data-bs-target="#planANDdesign-tab-pane" href="#planANDdesign-tab-pane"
-                    role="tab" aria-controls="planANDdesign-tab-pane" aria-selected="false">Plan & Design
-            </a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="create-tab" data-bs-toggle="tab" data-bs-target="#create-tab-pane" href="#create-tab-pane" type="button"
-                    role="tab" aria-controls="create-tab-pane" aria-selected="false">Create
-            </a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="evaluation-tab" data-bs-toggle="tab" data-bs-target="#evaluation-tab-pane" href="#evaluation-tab-pane"
-                    role="tab" aria-controls="evaluation-tab-pane" aria-selected="true">Evaluation
-            </a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="references-tab" data-bs-toggle="tab" data-bs-target="#references-tab-pane" href="#references-tab-pane"
-                    role="tab" aria-controls="references-tab-pane" aria-selected="true">References
-            </a>
-        </li>
-    </ul>
-</div>
-
-<div class="container px-4 pb-5">
-
-    <div class="tab-content mt-4" id="myTabContent">
-
-        <div class="tab-pane fade show active mt-5" id="brief-tab-pane" role="tabpanel" aria-labelledby="brief-tab" tabindex="0">
-            <hr />
-            <h2>Brief</h2>
-            <div class="row">
-                <div class="col-6"><img src="img/graph.png" class="img-fluid"></div>
-                <div class="col-6"><img src="img/GSRsensor.jpeg" class="img-fluid"></div>
-            </div>
-            <br><br>
-            <h3>Brief Report Video</h3><br>
-            <video class="img-fluid" controls="controls" name="Brief Video" ><source src="img/2444CCCF-BB4D-40D0-869A-5B82789344D1.mov"></video>
-        </div>
-
-
-
-        <div class="tab-pane fade mt-5" id="investigation-tab-pane" role="tabpanel" aria-labelledby="investigation-tab" tabindex="0">
-            <hr />
-            <h2>Investigation</h2>
-            <p>
-                I started the investigation process by brainstorming different projects I could do that would help enhance a person's well-being.
-                I considered an alarm that would go off when you moved your phone to reduce screen time, cultivating plants from home to help people relax, and finally the idea I decided to go with, which was an analysis of sweat on skin that could let you know when you're getting stressed.
-            </p>
-            <p>
-                When I investigated which sensor I could use to carry the project the only one that I could find that would be useful was the galvanic skin response sensor (GSR).
-                This sensor records electrical activity in the skin, which is due to variation of moisture level in the body due to sweating. <br>
-
-                The sensor measures the varying levels of the skin conducting the electric current.
-                Higher levels of perspiration on the skin leads to a greater conductance of electrical currents.
-                A higher level of skin conductivity after an event can be interpreted as emotional arousal.
-                I will be interpreting this as an increase of stress level.
-                Then this could be used to enhance their well-being as the person can know when they're getting stressed and know what to avoid doing or know when to take a break from whatever activity they may be doing.
-            </p>
-            <p>
-                I carried out interviews with my friends and family to see if they would be interested in a product like this.
-                The outcome was very positive, they all said they would be very interested in being able to view their emotional changes towards different tasks such as movies, so I made sure to include a way to actively view the changes.
-                I also asked if they would be bothered by wearing the sensor on their fingers over long periods of times, but they seemed okay with it.
-                One piece of feedback that I got was that they would think it would be more useful if people could still move around while wearing it and for the artifact to not take up too much space.
-                Another thing I asked that I considered when creating the code was in which way they would like to view the values.
-                They wanted it to be easy to see the changes.
-            </p>
-        </div>
-
-
-
-        <div class="tab-pane fade mt-5" id="planANDdesign-tab-pane" role="tabpanel" aria-labelledby="planANDdesign-tab" tabindex="0">
-            <hr />
-            <h2>Plan and Design</h2>
-            <p>
-                <h4>User's Needs</h4>
-                I made sure to include the feedback from the interviews when designing my project.
-                For example my end design only has one sensor attached to the arduino, when originally I was meant to have all my outputs on attached to it.
-                This shows me taking the users needs into account as they said they would like for the artifact to not be too bulky.
-                As well as that, because the interviews let me know people wanted the data to be easily readable, I decided to go with a graph to interpret the data.
-                <br>
-            </p>
-
-            <p>
-                <h4>What if...</h4>
-                When creating my project I took into account some 'what if' situations.
-                What if the user is deaf? I made a visual way of knowing when you have reached a high stress level.
-                What if the user is blind? There is a warning noise that plays when you have reached a high stress level.
-                What if the user do not know how to read the graph? The stress level is written on the screen as it's being read, so they don't need to know how to read graphs.
-                <br>
-            </p>
-
-            <p>
-                <h4>Hardware and Software</h4>
-                <ul>
-                    <li>Computer to run code on.</li>
-                    <li>Arduino which will have C++ code it will run on, it will take in the information and feed it to python code which will act on it.</li>
-                    <li>Galvanic Skin Response Sensor.</li>
-                    <li>Speaker or Headphones, something to be able to hear the warning sound.</li>
-                    <li>Cables used to connect the sensor to the arduino.</li>
-                    <li>Visual Studio Code used to code python.</li>
-                    <li>ArduinoID used to code the C++ code.</li>
-                </ul>
-            <br>
-            </p>
-
-            <p>
-                <h3>Flowchart</h3><br>
-                <div class="row"><div class="col-12"><img src="img/latest_flowchart.png" class="img-fluid"></div> </div><br>
-            </p>
-
-        </div>
-
-
-
-        <div class="tab-pane fade mt-5" id="create-tab-pane" role="tabpanel" aria-labelledby="create-tab" tabindex="0">
-            <hr />
-            <h2>Create</h2>
-
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col"> </th>
-                    <th scope="col">Week</th>
-                    <th scope="col">Progress Log</th>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Week 1 </td>
-                    <td>Brain storming ideas and choosing which one I will focus on.</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Week 2</td>
-                    <td>Learning the language C++</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Week 3</td>
-                    <td>Implementing what I learned in C++ to code my arduino. <br> Trying to find information about my GSR sensor.</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Week 4</td>
-                    <td>Learning how to transfer data from arduino to python.<br> Coding python to print out needed outputs using collected data from arduino.</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Week 5 + 6</td>
-                    <td>Creating Website, HTML code, recording video, filling in the report.</td>
-                </tr>
-                </thead>
-            </table>
-
-            <p>
-                <br>
-                <h4>Unit Test</h4>
-                <div class="row">
-                    <div class="col-6">
-                        <p>
-                            I am using this unit test to check if the graphing is working properly.
-                            We are using pre-collected data as the changing data set is tested in a different unit test.
-                            This is very important as the graph is the main output of my project.
-                            If it were to not work, it would be very damaging to the overall outcome for the project.
-
-                            The way I achieved using this code as a unit test is because with this I am able to upload a csv dile that I already know the contents of.
-                            This means that when I run the code I already have a graph made to compare this outcome to.
-                            The graph was easy to make outside the code as the csv file can be uploaded to pre-existing webs and is also not too hard to create by hand.
-                            <ol>
-                                <li>In the line 3 and 4 we import necessary libraries</li>
-                                <li>Line 7 is very important, it will take in the csv file that we already know how the graph looks, and we use it to test the code, this unit test will be checking if the graphs are created accurately and how they should look before we start adding the sounds, colour changes, and ongoing movement of the graph.</li>
-                                <li>Lines 16 and 17 we divide the data we collect from the csv file. This allows us to choose what data we show in the x-axis and y-axis. </li>
-                                <li>Line 19 is the code making the plot line, we are saying its green and solid. We don't have the colour changing aspect in this unit test yet.</li>
-                                <li>Lines 20 to 22 is all about labeling the graph.</li>
-                            </ol>
-                        </p>
-                    </div>
-                    <div class="col-6"><img src="img/unit_test.jpg" class="img-fluid"></div>
-                </div>
-            </p>
-
-            <br>
-            <h4>Problem and Solution</h4>
-            <p>
-                There was many small problems that I encountered through the process of creating the coding for the project.
-                Along with other problems too, such as getting the GSR sensor as the shipping time was months. <br><br>
-
-                A problem that I encountered while creating my project which I will talk about here was when I reached the point where I had to create a code to transfer data from the Arduino to python. <br>
-                All the information online was outdated or just did not work in general. <br>
-                It was very difficult to find anything that would be helpful, but I noticed a lot of people were using serial library to import information. <br>
-                After reading a lot of websites and watching a few tutorials I came to the conclusion that none of them were going to help me, as none were working, and decided to take a different approach.<br>
-                Using the official documentation, I learnt how to use the import serial and eventually using trial and error I figured out how to get it working. <br>
-            </p>
-
-            <h4 class="mt-5 mb-0">An important piece of code</h4>
-            <div class="row">
-                <div class="col-6">
-                    <p>
-                        This piece of code is important to the project as it is in charge of taking the data being collected from the arduino, storing the data into a csv file and then into the computer.<br>
-                        This then allows python to read that data and act on it making the graph and all other outputs. <br>
-
-                        <ol>
-                            <li>Line 11 sets what serial port the computer is taking the information through. This would change for each computer.</li>
-                            <li>Line 12 tell the program where to store the data.</li>
-                            <li>Line 14 is a variable that is later used in the code for printing out a message.</li>
-                            <li>Line 16, try lets you be able to handle errors that may occur.</li>
-                            <li>Line 18 is what actually tells the program to read the serial port and take in the data from the arduino.</li>
-                        </ol>
-                    </p>
-                </div>
-                <div class="col-6"><img src="img/importing_code.jpg" class="img-fluid"></div>
-            </div>
-
-
-                <h4 class="mt-5 mb-0">Creating the Graph</h4>
-            <div class="row">
-                <div class="col-3">
-                    <br><br>
-                    I had to play around with the coding for the graphs as it was my first time using them.
-                    <p>
-                        After learning how to code for the graph to print out the values inside the csv file this was the first outcome.<br>
-                        It was extremely hard to read so my next step was to change its design.<br>
-                        To make more graphs, I carried out some more tests to collect more data.
-                    </p>
-                </div>
-
-                <div class="col-9"><img src="img/dashedStressPractice.png" class="img-fluid"> </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3">
-                    <p>
-                        <br><br><br>
-                        I was wearing the sensors to try to get some new data sets when my dad made me laugh.<br>
-                        This was the first data were you could clearly see a big change in stress levels.<br>
-                        It showed that laughing made me relax a lot, which makes sense if you think about the saying "laughter is the best medicine".<br>
-                        I also changed the look of the graph which made it so much easier to read, this helped me decide that I was going to use solid lines in the graph.<br>
-                        Later on I added the colour change, sound warning, and actively moving line to the output graph.
-                    </p>
-                </div>
-                <div class="col-9"><img src="img/LaughingStress.png" class="img-fluid"></div>
-            </div>
-
-
-        </div>
-
-
-
-        <div class="tab-pane fade mt-5" id="evaluation-tab-pane" role="tabpanel" aria-labelledby="evaluation-tab" tabindex="0">
-            <h2>Evaluation</h2>
-            <p>
-                When I began my evaluation, the first thing I checked was if my project was meeting the brief. <br>
-                The brief was as follows:
-            </p>
-
-            <p>
-            <h4>Basic Requirements</h4>
-            <ul>
-                <li>Create a fully automated embedded system that utilises digital/analogue inputs and
-                    digital/analogue outputs to support the theme of well-being.</li>
-                <li>Validate and store the data gathered from the embedded system.</li>
-                <li>Create an analysis component that can be used to calculate or predict certain information and
-                    inform future decisions relating to well-being.</li>
-            </ul>
-            </p>
-
-            <p>
-            <h4>Advanced Requirements</h4>
-            <ul>
-                <li>Using Python, create a computer model based on your own created dataset of well-being data or one that you have sourced externally.
-                    Your personal dataset could be generated manually, programmatically or by the embedded system.
-                    The dataset should be capable of answering a minimum of two ‘what if’ type questions which you will need to devise yourself. </li>
-                <li>Each ‘what if’ question must use a minimum of three validated parameters (using at least two
-                    different data types) and, based on the information provided, offer the user insights in relation
-                    to some aspect of their well-being.</li>
-                <li>Users can view data in a graphical format which displays information such as their progress
-                    using the system or the results of a ‘what if’ scenario. </li>
-            </ul>
-            </p>
-
-            <p>
-                To meet these requirements, I created a piece of coding using the language C++ and uploaded it into an Arduino.
-                This takes the reading from the GSR sensor, an analogue input.
-                Then, through python I created a program that takes in the information from the Arduino and stores it in a CSV file.
-                I made the information be displayed in a graph form (graphical format) which would change colours according to the stress level.
-                As well as that, it displays the average stress level throughout the time running and plays a warning noise when you reach high stress level.
-                The average stress level can help the user by informing them on whether the activity they have done made them stressed or calm, and they can know if they should avoid doing this activity in the future or not.
-            </p>
-
-            <p>
-                My initial design of the project did not contain all the requirements needed from the project brief. I did not have enough outputs planned, I only had the idea of adding LED lights to the arduino. <br>
-                I decided to have all my outputs coded straight onto the python code as it would be less of a hassle to carry around the arduino if it only had one sensor attached to it. <br>
-                Thankfully the original design idea didn't need many modifications to get it to meet the requirement, and it actually turned out to be a simpler plan then my original one. <br>
-            </p>
-
-            <p>
-                The project meets the needs of the user as I made sure the arduino was comfortable to wear. I did this by no applying the outputs physically to the arduino board. <br>
-                I also made the graph simple to read and made it in such a way that the graph moves as new data keeps being recorded. <br>
-            </p>
-
-            <p>
-                In the future there are a few things that could be improved on. <br>
-                Some examples are:
-                <ul>
-                    <li>Currently, when you have reached a certain stress level the whole graph line changes colour to red. In the future I would like it if the line only changed colour on the section that is higher than the certain level.</li>
-                    <li>In the code I have created, the levels that correspond to high stress or low stress are based on my levels that I worked out with multiple trial tests. In the future I would like it if there was a peace of code that, when the user first gets the artifact, it would calculate what level would be high for that specific user. </li>
-                    <li>I also would like to have a sound play when you are no longer in the high stress area.</li>
-                </ul>
-            </p>
-        </div>
-
-
-
-        <div class="tab-pane fade mt-5" id="references-tab-pane" role="tabpanel" aria-labelledby="references-tab" tabindex="0">
-            <h2>References</h2>
-            <p>
-                <ul>
-                    <li><a href="https://docs.arduino.cc/hardware/uno-rev3/#tech-specs">Uno R3</a>: Learning about my arduino model.</li>
-                    <li><a href="https://www.arduino.cc/reference/en/libraries/liquidcrystal/write/">Liquid Crystal</a>: Used when learning to use C++</li>
-                    <li><a href="https://docs.arduino.cc/learn/electronics/lcd-displays/">More LiquidCrystal</a></li>
-                    <li><a href="https://matplotlib.org/stable/">Matplot Information</a></li>
-                    <li><a href="https://www.instructables.com/Sending-Data-From-Arduino-to-Python-Via-USB/">Data From Arduino to Python</a>: did not work well for me.</li>
-                </ul>
-                <h5>Used to transfer info from c++ to python:</h5>
-                <ul>
-                    <li><a href="https://pythonhosted.org/pyserial/pyserial.html#features">pySerial</a></li>
-                    <li><a href="https://pypi.org/project/pyserial/">pySerial 3.5 install</a></li>
-                    <li><a href="https://pypi.org/project/PyQt5/">PyQt5</a></li>
-                </ul>
-                <h5>Information for sensors:</h5>
-                <ul>
-                    <li><a href="https://www.arduino.cc/reference/en/libraries/">Arduino Libraries</a></li>
-                    <li><a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">Arduino Serial Library</a></li>
-                    <li><a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/println/">Serial.println()</a>: Learning about .printlc()</li>
-                </ul>
-                <h5>Warning Sound:</h5>
-                <ul>
-                    <li><a href="https://pythonbasics.org/python-play-sound/">For uploading</a></li>
-                    <li><a href="https://pixabay.com/sound-effects/search/warning/">The Sounds</a></li>
-                </ul>
-            </p>
-
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col"> </th>
-                    <th scope="col">Section</th>
-                    <th scope="col">Words</th>
-                </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Brief</td>
-                    <td>45 + Video</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Investigation</td>
-                    <td>370</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Plan and Design</td>
-                    <td>260 + Flowchart</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Create</td>
-                    <td>847</td>
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Evaluation</td>
-                    <td>630</td>
-                </tr>
-                <tr>
-                    <th scope="row">6</th>
-                    <td>Total</td>
-                    <td>2152</td>
-                </tr>
-                </tbody>
-            </table>
-            (I am not counting the reference page in my word count)
-
-        </div>
-
-    </div>
-
-
-</div>
 
 <!-- Footer -->
 <div id="footer" class="container">

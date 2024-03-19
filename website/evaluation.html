@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CompScience Project</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Hero -->
+
+<div>
+    <div>
+        <img src="img/photo_2024-03-13_16-39-16.jpg"  alt="hand with sensor">
+    </div>
+    <div>
+        <h1>Stress Detector - Project Report</h1>
+        <p>This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
+    </div>
+</div>
+
+<!-- End Hero -->
+
+<!-- Menu -->
+<div class="container px-4 pb-5">
+    <div class="row justify-content-center">
+        <div class="col">
+            <a class="nav-link active" href="index.html" >Brief</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="investigation.html" >Investigation</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="plan-and-design.html" >Plan & Design</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="create.html" >Create</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="evaluation.html" >Evaluation</a>
+        </div>
+        <div class="col">
+            <a class="nav-link active" href="references.html" >References</a>
+        </div>
+    </div>
+</div>
+<!-- End Menu -->
+
+
+    <h2>Evaluation</h2>
+    <p>
+        When I began my evaluation, the first thing I checked was if my project was meeting the brief. <br>
+        The brief was as follows:
+    </p>
+
+
+    <h4>Basic Requirements</h4>
+    <ul>
+        <li>Create a fully automated embedded system that utilises digital/analogue inputs and
+            digital/analogue outputs to support the theme of well-being.</li>
+        <li>Validate and store the data gathered from the embedded system.</li>
+        <li>Create an analysis component that can be used to calculate or predict certain information and
+            inform future decisions relating to well-being.</li>
+    </ul>
+
+
+    <h4>Advanced Requirements</h4>
+    <ul>
+        <li>Using Python, create a computer model based on your own created dataset of well-being data or one that you have sourced externally.
+            Your personal dataset could be generated manually, programmatically or by the embedded system.
+            The dataset should be capable of answering a minimum of two ‘what if’ type questions which you will need to devise yourself. </li>
+        <li>Each ‘what if’ question must use a minimum of three validated parameters (using at least two
+            different data types) and, based on the information provided, offer the user insights in relation
+            to some aspect of their well-being.</li>
+        <li>Users can view data in a graphical format which displays information such as their progress
+            using the system or the results of a ‘what if’ scenario. </li>
+    </ul>
+
+
+    <p>
+        To meet these requirements, I created a piece of coding using the language C++ and uploaded it into an Arduino.
+        This takes the reading from the GSR sensor, an analogue input.
+        Then, through python I created a program that takes in the information from the Arduino and stores it in a CSV file.
+        I made the information be displayed in a graph form (graphical format) which would change colours according to the stress level.
+        As well as that, it displays the average stress level throughout the time running and plays a warning noise when you reach high stress level.
+        The average stress level can help the user by informing them on whether the activity they have done made them stressed or calm, and they can know if they should avoid doing this activity in the future or not.
+    </p>
+
+    <p>
+        My initial design of the project did not contain all the requirements needed from the project brief. I did not have enough outputs planned, I only had the idea of adding LED lights to the arduino. <br>
+        I decided to have all my outputs coded straight onto the python code as it would be less of a hassle to carry around the arduino if it only had one sensor attached to it. <br>
+        Thankfully the original design idea didn't need many modifications to get it to meet the requirement, and it actually turned out to be a simpler plan then my original one. <br>
+    </p>
+
+    <p>
+        The project meets the needs of the user as I made sure the arduino was comfortable to wear. I did this by no applying the outputs physically to the arduino board. <br>
+        I also made the graph simple to read and made it in such a way that the graph moves as new data keeps being recorded. <br>
+    </p>
+
+    <p>
+        In the future there are a few things that could be improved on. <br>
+        Some examples are:
+    </p>
+    <ul>
+        <li>Currently, when you have reached a certain stress level the whole graph line changes colour to red. In the future I would like it if the line only changed colour on the section that is higher than the certain level.</li>
+        <li>In the code I have created, the levels that correspond to high stress or low stress are based on my levels that I worked out with multiple trial tests. In the future I would like it if there was a peace of code that, when the user first gets the artifact, it would calculate what level would be high for that specific user. </li>
+        <li>I also would like to have a sound play when you are no longer in the high stress area.</li>
+    </ul>
+
+
+<!-- Footer -->
+<div id="footer" class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Candidate Number: 135792 </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Pilo-cr/ProjectGSR" target="_blank"><i class="bi bi-github"></i></a></li>
+            <!--  Code for after exams are back: <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>  -->
+        </ul>
+    </footer>
+</div>
+
+</body>
+
+</html>
