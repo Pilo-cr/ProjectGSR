@@ -14,132 +14,163 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link href="styles.css" rel="stylesheet">
+
+    <style>
+
+        /* Tables style */
+
+        #table-week-log {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        #table-word-count table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px solid gray;
+
+        }
+
+        #table-word-count thead th:nth-child(1) {
+            width: 35%;
+            border-bottom: 3px solid gray;
+        }
+
+        #table-word-count thead th:nth-child(2) {
+            width: 65%;
+            text-align: left;
+            border-bottom: 3px solid gray;
+        }
+
+        #table-word-count tbody td:nth-child(1) {
+            text-align: center;
+        }
+
+        #table-word-count tbody tdß:nth-child(2) {
+
+        }
+
+        /*thead th:nth-child(3) {*/
+        /*    width: 15%;*/
+        /*}*/
+
+        #table-word-count thead th,
+        #table-word-count tfoot th {
+            font-family: "Rock Salt", cursive;
+        }
+    </style>
+
 </head>
 
 <body>
-<!-- Hero -->
-
-<div>
-    <div>
-        <img src="img/photo_2024-03-13_16-39-16.jpg"  alt="hand with sensor">
-    </div>
-    <div>
-        <h1>Stress Detector - Project Report</h1>
-        <p>This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
-    </div>
-</div>
-
-<!-- End Hero -->
 
 <!-- Menu -->
-<div class="container px-4 pb-5">
-    <div class="row justify-content-center">
-        <div class="col">
-            <a class="nav-link active" href="index.html" >Brief</a>
-        </div>
-        <div class="col">
-            <a class="nav-link active" href="investigation.html" >Investigation</a>
-        </div>
-        <div class="col">
-            <a class="nav-link active" href="plan-and-design.html" >Plan & Design</a>
-        </div>
-        <div class="col">
-            <a class="nav-link active" href="create.html" >Create</a>
-        </div>
-        <div class="col">
-            <a class="nav-link active" href="evaluation.html" >Evaluation</a>
-        </div>
-        <div class="col">
-            <a class="nav-link active" href="references.html" >References</a>
-        </div>
-    </div>
+<div class="topnav">
+    <a href="index.html" >Brief</a>
+    <a href="investigation.html" >Investigation</a>
+    <a href="plan-and-design.html" >Plan & Design</a>
+    <a href="create.html" >Create</a>
+    <a href="evaluation.html" >Evaluation</a>
+    <a class="active" href="references.html" >References</a>
 </div>
 <!-- End Menu -->
 
-<h2>References</h2>
 
-<ul>
-    <li><a target="_blank" href="https://docs.arduino.cc/hardware/uno-rev3/#tech-specs">Uno R3</a>: Learning about my arduino model.</li>
-    <li><a target="_blank" href="https://www.arduino.cc/reference/en/libraries/liquidcrystal/write/">Liquid Crystal</a>: Used when learning to use C++</li>
-    <li><a target="_blank" href="https://docs.arduino.cc/learn/electronics/lcd-displays/">More LiquidCrystal</a></li>
-    <li><a target="_blank" href="https://matplotlib.org/stable/">Matplot Information</a></li>
-    <li><a target="_blank" href="https://www.instructables.com/Sending-Data-From-Arduino-to-Python-Via-USB/">Data From Arduino to Python</a>: did not work well for me.</li>
-</ul>
-<h5>Used to transfer info from c++ to python:</h5>
-<ul>
-    <li><a target="_blank" href="https://pythonhosted.org/pyserial/pyserial.html#features">pySerial</a></li>
-    <li><a target="_blank" href="https://pypi.org/project/pyserial/">pySerial 3.5 install</a></li>
-    <li><a target="_blank" href="https://pypi.org/project/PyQt5/">PyQt5</a></li>
-</ul>
-<h5>Information for sensors:</h5>
-<ul>
-    <li><a target="_blank" href="https://www.arduino.cc/reference/en/libraries/">Arduino Libraries</a></li>
-    <li><a target="_blank" href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">Arduino Serial Library</a></li>
-    <li><a target="_blank" href="https://www.arduino.cc/reference/en/language/functions/communication/serial/println/">Serial.println()</a>: Learning about .printlc()</li>
-</ul>
-<h5>Warning Sound:</h5>
-<ul>
-    <li><a target="_blank" href="https://pythonbasics.org/python-play-sound/">For uploading</a></li>
-    <li><a target="_blank" href="https://pixabay.com/sound-effects/search/warning/">The Sounds</a></li>
-</ul>
+<div id="main-container">
+
+    <!-- Hero -->
+    <div>
+        <div>
+            <img src="img/photo_2024-03-13_16-39-16.jpg"  alt="hand with sensor">
+        </div>
+        <div>
+            <h1>Stress Detector - Project Report</h1>
+            <p>This is a Leaving Cert project focused on using technology to help improve the well-being of the user. I have made a project that tracks the users stress levels. I did this by using galvanic skin response sensors. </p>
+        </div>
+    </div>
+    <!-- End Hero -->
 
 
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col"> </th>
-        <th scope="col">Section</th>
-        <th scope="col">Words</th>
-    </tr>
-    </thead>
-    <tbody class="table-group-divider">
-    <tr>
-        <th scope="row">1</th>
-        <td>Brief</td>
-        <td>45 + Video</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Investigation</td>
-        <td>370</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td>Plan and Design</td>
-        <td>260 + Flowchart</td>
-    </tr>
-    <tr>
-        <th scope="row">4</th>
-        <td>Create</td>
-        <td>847</td>
-    </tr>
-    <tr>
-        <th scope="row">5</th>
-        <td>Evaluation</td>
-        <td>630</td>
-    </tr>
-    <tr>
-        <th scope="row">6</th>
-        <td>Total</td>
-        <td>2152</td>
-    </tr>
-    </tbody>
-</table>
-(I am not counting the reference page in my word count)
+
+    <h2>References</h2>
+
+    <ul>
+        <li><a target="_blank" href="https://docs.arduino.cc/hardware/uno-rev3/#tech-specs">Uno R3</a>: Learning about my arduino model.</li>
+        <li><a target="_blank" href="https://www.arduino.cc/reference/en/libraries/liquidcrystal/write/">Liquid Crystal</a>: Used when learning to use C++</li>
+        <li><a target="_blank" href="https://docs.arduino.cc/learn/electronics/lcd-displays/">More LiquidCrystal</a></li>
+        <li><a target="_blank" href="https://matplotlib.org/stable/">Matplot Information</a></li>
+        <li><a target="_blank" href="https://www.instructables.com/Sending-Data-From-Arduino-to-Python-Via-USB/">Data From Arduino to Python</a>: did not work well for me.</li>
+    </ul>
+    <h5>Used to transfer info from c++ to python:</h5>
+    <ul>
+        <li><a target="_blank" href="https://pythonhosted.org/pyserial/pyserial.html#features">pySerial</a></li>
+        <li><a target="_blank" href="https://pypi.org/project/pyserial/">pySerial 3.5 install</a></li>
+        <li><a target="_blank" href="https://pypi.org/project/PyQt5/">PyQt5</a></li>
+    </ul>
+    <h5>Information for sensors:</h5>
+    <ul>
+        <li><a target="_blank" href="https://www.arduino.cc/reference/en/libraries/">Arduino Libraries</a></li>
+        <li><a target="_blank" href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">Arduino Serial Library</a></li>
+        <li><a target="_blank" href="https://www.arduino.cc/reference/en/language/functions/communication/serial/println/">Serial.println()</a>: Learning about .printlc()</li>
+    </ul>
+    <h5>Warning Sound:</h5>
+    <ul>
+        <li><a target="_blank" href="https://pythonbasics.org/python-play-sound/">For uploading</a></li>
+        <li><a target="_blank" href="https://pixabay.com/sound-effects/search/warning/">The Sounds</a></li>
+    </ul>
+
+    <div id="table-word-count">
+        <table>
+            <thead>
+            <tr>
+                <th>Section</th>
+                <th>Words</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Brief</td>
+                <td>45 + Video</td>
+            </tr>
+            <tr>
+                <td>Investigation</td>
+                <td>370</td>
+            </tr>
+            <tr>
+                <td>Plan and Design</td>
+                <td>260 + Flowchart</td>
+            </tr>
+            <tr>
+                <td>Create</td>
+                <td>847</td>
+            </tr>
+            <tr>
+                <td>Evaluation</td>
+                <td>630</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>2152</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    (I am not counting the reference page in my word count)
+
+</div>
 
 <!-- Footer -->
-<div id="footer" class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Candidate Number: 135792 </span>
-        </div>
+<footer class="row">
+    <div class="column">
+        © 2024 Candidate Number: 135792
+    </div>
 
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Pilo-cr/ProjectGSR" target="_blank"><i class="bi bi-github"></i></a></li>
-            <!--  Code for after exams are back: <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>  -->
-        </ul>
-    </footer>
-</div>
+    <div class="column end">
+        <a href="https://github.com/Pilo-cr/ProjectGSR" target="_blank"><i class="bi bi-github"></i></a>
+    </div>
+</footer>
+<!-- End Footer -->
 
 </body>
 
