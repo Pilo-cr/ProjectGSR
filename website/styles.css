@@ -31,7 +31,6 @@ video {
     height: auto;
 }
 
-
 .row {
     display: flex;
 }
@@ -42,6 +41,10 @@ video {
 
 .center {
     text-align: center;
+}
+
+.end {
+    text-align: end;
 }
 
 
@@ -100,8 +103,15 @@ video {
 
 
 /* Footer */
-#footer ul {
-    list-style-type: none;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #f2f2f2;
 }
 
 
